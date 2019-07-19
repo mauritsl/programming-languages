@@ -1,0 +1,42 @@
+digraph {
+  overlap=scale;
+  mindist=.4;
+
+  node [ shape=rect style=filled fillcolor="#E9573F", color=white, fontcolor=white ]
+
+  b [ label="Using SQL" ]
+  l [ label="Professional developer" ]
+  r [ label="Sometimes code for work" ]
+  ll [ label="Doctoral degree" ]
+  lr [ label="Major in web" ]
+  rl [ label="Never contributed to Open Source" ]
+  rr [ label="Major in maths or stats" ]
+
+  b -> l [ label=no ]
+  b -> r [ label=yes ]
+  l -> ll [ label=no ]
+  l -> lr [ label=yes ]
+  r -> rl [label=no ]
+  r -> rr [label=yes]
+
+  ll -> lll [ label="no" ]
+  ll -> llr [ label="yes" ]
+  lr -> lrl [ label="no" ]
+  lr -> lrr [ label="yes" ]
+  rl -> rll [ label="no" ]
+  rl -> rlr [ label="yes" ]
+  rr -> rrl [ label="no" ]
+  rr -> rrr [ label="yes" ]
+
+  lll [ label="45%" shape=plaintext style=solid fontcolor=black ]
+  llr [ label="23%" shape=plaintext style=solid fontcolor=black ]
+  lrl [ label="59%" shape=plaintext style=solid fontcolor=black ]
+  lrr [ label="88%" shape=plaintext style=solid fontcolor=black ]
+  rll [ label="82%" shape=plaintext style=solid fontcolor=black ]
+  rlr [ label="76%" shape=plaintext style=solid fontcolor=black ]
+  rrl [ label="61%" shape=plaintext style=solid fontcolor=black ]
+  rrr [ label="35%" shape=plaintext style=solid fontcolor=black ]
+}
+
+
+
