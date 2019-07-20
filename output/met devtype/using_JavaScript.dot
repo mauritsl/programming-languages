@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="DevType_Developer, full-stack <= 0.5\ngini = 0.433\nsamples = 68342\nvalue = [21678, 46664]"] ;
+1 [label="DevType_Developer, front-end <= 0.5\ngini = 0.5\nsamples = 34821\nvalue = [17304, 17517]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="PlatformWorkedWith_WordPress <= 0.5\ngini = 0.492\nsamples = 28687\nvalue = [16171, 12516]"] ;
+1 -> 2 ;
+3 [label="gini = 0.486\nsamples = 26478\nvalue = [15486, 10992]"] ;
+2 -> 3 ;
+4 [label="gini = 0.428\nsamples = 2209\nvalue = [685, 1524]"] ;
+2 -> 4 ;
+5 [label="DevType_Developer, desktop or enterprise applications <= 0.5\ngini = 0.301\nsamples = 6134\nvalue = [1133, 5001]"] ;
+1 -> 5 ;
+6 [label="gini = 0.255\nsamples = 4926\nvalue = [738, 4188]"] ;
+5 -> 6 ;
+7 [label="gini = 0.44\nsamples = 1208\nvalue = [395, 813]"] ;
+5 -> 7 ;
+8 [label="DevType_Developer, front-end <= 0.5\ngini = 0.227\nsamples = 33521\nvalue = [4374, 29147]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="DevType_Developer, desktop or enterprise applications <= 0.5\ngini = 0.279\nsamples = 18673\nvalue = [3126, 15547]"] ;
+8 -> 9 ;
+10 [label="gini = 0.258\nsamples = 15980\nvalue = [2435, 13545]"] ;
+9 -> 10 ;
+11 [label="gini = 0.382\nsamples = 2693\nvalue = [691, 2002]"] ;
+9 -> 11 ;
+12 [label="DevType_Developer, desktop or enterprise applications <= 0.5\ngini = 0.154\nsamples = 14848\nvalue = [1248, 13600]"] ;
+8 -> 12 ;
+13 [label="gini = 0.113\nsamples = 9460\nvalue = [566, 8894]"] ;
+12 -> 13 ;
+14 [label="gini = 0.221\nsamples = 5388\nvalue = [682, 4706]"] ;
+12 -> 14 ;
+}

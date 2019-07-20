@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="PlatformWorkedWith_Linux <= 0.5\ngini = 0.486\nsamples = 68342\nvalue = [39862, 28480]"] ;
+1 [label="DevType_Data scientist or machine learning specialist <= 0.5\ngini = 0.409\nsamples = 34914\nvalue = [24910, 10004]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="MainBranch_I am a developer by profession <= 0.5\ngini = 0.388\nsamples = 33118\nvalue = [24409, 8709]"] ;
+1 -> 2 ;
+3 [label="gini = 0.486\nsamples = 8236\nvalue = [4808, 3428]"] ;
+2 -> 3 ;
+4 [label="gini = 0.334\nsamples = 24882\nvalue = [19601, 5281]"] ;
+2 -> 4 ;
+5 [label="DevType_Developer, desktop or enterprise applications <= 0.5\ngini = 0.402\nsamples = 1796\nvalue = [501, 1295]"] ;
+1 -> 5 ;
+6 [label="gini = 0.363\nsamples = 1504\nvalue = [359, 1145]"] ;
+5 -> 6 ;
+7 [label="gini = 0.5\nsamples = 292\nvalue = [142, 150]"] ;
+5 -> 7 ;
+8 [label="DevType_Data scientist or machine learning specialist <= 0.5\ngini = 0.494\nsamples = 33428\nvalue = [14952, 18476]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="PlatformWorkedWith_Raspberry Pi <= 0.5\ngini = 0.499\nsamples = 30237\nvalue = [14506, 15731]"] ;
+8 -> 9 ;
+10 [label="gini = 0.499\nsamples = 23811\nvalue = [12342, 11469]"] ;
+9 -> 10 ;
+11 [label="gini = 0.447\nsamples = 6426\nvalue = [2164, 4262]"] ;
+9 -> 11 ;
+12 [label="DevType_Database administrator <= 0.5\ngini = 0.24\nsamples = 3191\nvalue = [446, 2745]"] ;
+8 -> 12 ;
+13 [label="gini = 0.203\nsamples = 2569\nvalue = [294, 2275]"] ;
+12 -> 13 ;
+14 [label="gini = 0.369\nsamples = 622\nvalue = [152, 470]"] ;
+12 -> 14 ;
+}

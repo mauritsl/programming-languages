@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="DevType_Developer, full-stack <= 0.5\ngini = 0.495\nsamples = 68342\nvalue = [30840, 37502]"] ;
+1 [label="DevType_Developer, back-end <= 0.5\ngini = 0.493\nsamples = 34821\nvalue = [19455, 15366]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="DevType_Data or business analyst <= 0.5\ngini = 0.46\nsamples = 21318\nvalue = [13688, 7630]"] ;
+1 -> 2 ;
+3 [label="gini = 0.445\nsamples = 19763\nvalue = [13153, 6610]"] ;
+2 -> 3 ;
+4 [label="gini = 0.451\nsamples = 1555\nvalue = [535, 1020]"] ;
+2 -> 4 ;
+5 [label="DevType_Database administrator <= 0.5\ngini = 0.489\nsamples = 13503\nvalue = [5767, 7736]"] ;
+1 -> 5 ;
+6 [label="gini = 0.497\nsamples = 11927\nvalue = [5469, 6458]"] ;
+5 -> 6 ;
+7 [label="gini = 0.307\nsamples = 1576\nvalue = [298, 1278]"] ;
+5 -> 7 ;
+8 [label="PlatformWorkedWith_Windows <= 0.5\ngini = 0.449\nsamples = 33521\nvalue = [11385, 22136]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="DevType_Database administrator <= 0.5\ngini = 0.486\nsamples = 16943\nvalue = [7077, 9866]"] ;
+8 -> 9 ;
+10 [label="gini = 0.494\nsamples = 14786\nvalue = [6616, 8170]"] ;
+9 -> 10 ;
+11 [label="gini = 0.336\nsamples = 2157\nvalue = [461, 1696]"] ;
+9 -> 11 ;
+12 [label="DevType_Database administrator <= 0.5\ngini = 0.385\nsamples = 16578\nvalue = [4308, 12270]"] ;
+8 -> 12 ;
+13 [label="gini = 0.414\nsamples = 13544\nvalue = [3962, 9582]"] ;
+12 -> 13 ;
+14 [label="gini = 0.202\nsamples = 3034\nvalue = [346, 2688]"] ;
+12 -> 14 ;
+}
