@@ -4,13 +4,13 @@ digraph {
 
   node [ shape=rect style=filled fillcolor="#E9573F", color=white, fontcolor=white ]
 
-  b [ label="Using SQL" ]
-  l [ label="Professional developer" ]
-  r [ label="Sometimes code for work" ]
-  ll [ label="Doctoral degree" ]
-  lr [ label="Major in web" ]
-  rl [ label="Never contributed to Open Source" ]
-  rr [ label="Major in maths or stats" ]
+  b [ label="Professional developer" ]
+  l [ label="Doctoral degree" ]
+  r [ label="Masters degree" ]
+  ll [ label="Major in web" ]
+  lr [ label="Full-time" ]
+  rl [ label="Doctoral degree" ]
+  rr [ label="Using containers" ]
 
   b -> l [ label=no ]
   b -> r [ label=yes ]
@@ -25,18 +25,16 @@ digraph {
   lr -> lrr [ label="yes" ]
   rl -> rll [ label="no" ]
   rl -> rlr [ label="yes" ]
-  rr -> rrl [ label="no" ]
-  rr -> rrr [ label="yes" ]
+  rr -> rrr [ label="no" ]
+  rr -> rrl [ label="yes" ]
 
-  lll [ label="45%" shape=plaintext style=solid fontcolor=black ]
-  llr [ label="23%" shape=plaintext style=solid fontcolor=black ]
-  lrl [ label="59%" shape=plaintext style=solid fontcolor=black ]
-  lrr [ label="88%" shape=plaintext style=solid fontcolor=black ]
-  rll [ label="82%" shape=plaintext style=solid fontcolor=black ]
-  rlr [ label="76%" shape=plaintext style=solid fontcolor=black ]
-  rrl [ label="61%" shape=plaintext style=solid fontcolor=black ]
-  rrr [ label="35%" shape=plaintext style=solid fontcolor=black ]
+  lll [ label="56%" shape=plaintext style=solid fontcolor=black ]
+  llr [ label="84%" shape=plaintext style=solid fontcolor=black ]
+  lrl [ label="48%" shape=plaintext style=solid fontcolor=black ]
+  lrr [ label="28%" shape=plaintext style=solid fontcolor=black ]
+  rll [ label="76%" shape=plaintext style=solid fontcolor=black ]
+  rlr [ label="47%" shape=plaintext style=solid fontcolor=black ]
+  rrl [ label="57%" shape=plaintext style=solid fontcolor=black ]
+  rrr [ label="59%" shape=plaintext style=solid fontcolor=black ]
 }
-
-
 
